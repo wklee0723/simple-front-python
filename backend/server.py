@@ -31,6 +31,9 @@ def create_post():
     # -----------------------------
     return jsonify(data), 201
 
+@app.route("/hello", methods=["GET"])
+def hello():
+    return "hello", 200
 
 if __name__ == "__main__":
     app.run(debug=True)
